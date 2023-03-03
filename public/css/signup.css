@@ -1,0 +1,14 @@
+* {
+    margin: 0%;
+    padding: 0%;
+}
+body {
+    background-color: rgb(247, 236, 236);
+}
+h1 {
+    margin: 20px;
+    color: rgb(51, 19, 35);
+    border: 1px solid rgb(79, 12, 46);
+    border-radius: 15px;
+    padding: 10px 15px;
+}

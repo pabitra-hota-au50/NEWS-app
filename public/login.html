@@ -1,0 +1,40 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="./css/login.css">
+</head>
+
+<body>
+    <div class="main">
+        <h1>Login Page</h1>
+        <div class="form">
+            <form action="/userLogin" method="post" onsubmit="return validateemail();" >
+                <label class="label" for="email">Type your Email :</label> <br>
+                <input id="email" name="email" type="email" placeholder="write your email here" /><br>
+                <label class="label" for="password">Type your Password :</label><br>
+                <input id="password" name="password" type="password" placeholder="write your password here" /><br>
+                <input type="submit" id="btn" />
+
+            </form>
+        </div>
+
+
+    </div>
+    <script>
+        function validateemail()  
+        {  
+        var x=document.myform.email.value;  
+        var atposition=x.indexOf("@");  
+        var dotposition=x.lastIndexOf(".");  
+        if (atposition<1 || dotposition<atposition+2 || dotposition+2>=x.length){  
+          alert("Please enter a valid e-mail address \n atpostion:"+atposition+"\n dotposition:"+dotposition);  
+          return false;  
+          }  
+        }  
+    </script>    
+
+</html>
